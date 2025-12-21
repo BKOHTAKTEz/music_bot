@@ -4,6 +4,15 @@ import os
 from datetime import datetime
 from telebot import types
 from dotenv import load_dotenv
+import os
+import subprocess
+
+# ИНИЦИАЛИЗАЦИЯ БАЗЫ ДАННЫХ
+subprocess.run(['python', 'music_init.py'], check=True)
+print("✅ База данных инициализирована!")
+
+# ДАЛЬШЕ ВАШ BOT КОД
+bot = telebot.TeleBot(os.getenv('BOT_TOKEN'))
 
 load_dotenv()
 bot = telebot.TeleBot(os.getenv('BOT_TOKEN'))
