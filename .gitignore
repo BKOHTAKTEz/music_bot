@@ -1,0 +1,20 @@
+# Файлы окружения и секреты
+.env
+.env.local
+
+# База данных
+music_bot.db
+
+# Кэш Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Виртуальные окружения
+venv/
+env/
+ENV/
+
+# Операционные системы
+.DS_Store
+Thumbs.db
